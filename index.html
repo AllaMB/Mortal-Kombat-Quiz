@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat Quiz</title>
+    <link rel="icon" href="assets/images/mortal-kombat-icon.png" type="image/png">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mortal Kombat Logo -->
+        <div class="logo">
+            <img src="assets/images/Mortal-Kombat-logo.png" alt="Mortal Kombat Logo">
+        </div>
+
+        <!-- Audio Background-->
+<audio autoplay loop>
+    <source src="assets/sounds/MK-audio.mp4" type="audio/mp4">
+    Your browser does not support the audio tag.
+</audio>
+
+ <!-- Start Button -->
+ <div id="start-container" class="start-container">
+    <button id="startButton" onclick="startQuiz()">Start Quiz</button>
+</div>
+
+     <!-- Quiz -->
+     <div class="quiz-container" id="quizContainer" style="display: none;">
+        <h1>Mortal Kombat Quiz</h1>
+        <h2 id="question"></h2>
+
+            <div id="choices">
+                <button id="choice1" onclick="checkAnswer(this)"></button>
+                <button id="choice2" onclick="checkAnswer(this)"></button>
+                <button id="choice3" onclick="checkAnswer(this)"></button>
+                <button id="choice4" onclick="checkAnswer(this)"></button>
+            </div>
+            
+
+            <div id="result"></div>
+
+            <div>
+                <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+                <button id="skipButton" onclick="skipQuestion()">Skip</button>
+            </div>
+
+            <div>
+                <h3>Score: <span id="score">0</span></h3>
+            </div>
+             <!-- Retry Button, initially hidden -->
+    <div>
+        <button id="retryButton" onclick="retryQuiz()" style="display:none;">Retry</button>
+    </div>
+        </div>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
+
+
