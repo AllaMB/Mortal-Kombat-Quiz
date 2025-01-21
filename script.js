@@ -90,6 +90,8 @@ const humorousResponses = [
 function startQuiz() {
     // Hide the start button container
     document.getElementById("start-container").style.display = "none";
+    // Hide the tagline
+    document.getElementById('tagline').style.display = 'none';
 
     // Show the quiz container
     document.getElementById("quizContainer").style.display = "block";
@@ -147,17 +149,19 @@ function disableChoices() {
 // Go to the next question
 function nextQuestion() {
     if (!hasAnswered) {
-        document.getElementById("result").innerHTML = "Quitality? Come on, try again.";
+        document.getElementById("result").innerHTML = "Quitality? Come on, try harder.";
         return; // Don't go to the next question until answered
     }
     currentQuestionIndex++;
     if (currentQuestionIndex < quiz.length) {
         displayQuestion();
+        document.getElementById("nextButton").style.display = "inline-block";
+        document.getElementById("skipButton").style.display = "inline-block";
     } else {
         document.getElementById("question").innerHTML = `Quiz Completed!`;
         document.getElementById("choices").style.display = "none";
-        document.getElementById("nextButton").style.display = "none";
-        document.getElementById("skipButton").style.display = "none";
+        document.getElementById("nextButton").style.display = "none";// Hide next button when done
+        document.getElementById("skipButton").style.display = "none"; // Hide skip button when done
         document.getElementById("result").innerHTML = `Your final score is ${score}/${quiz.length}. You FINISHED IT!`;
         document.getElementById("retryButton").style.display = "block"; // Show Retry button
     }
@@ -168,6 +172,8 @@ function skipQuestion() {
     if (!hasAnswered) {
         document.getElementById("result").innerHTML = "Quitality? Come on, try again.";
         nextQuestion();
+        document.getElementById("nextButton").style.display = "inline-block";
+        document.getElementById("skipButton").style.display = "inline-block";
     }
 }
 
@@ -181,3 +187,8 @@ function retryQuiz() {
     document.getElementById("skipButton").style.display = "inline-block";
     displayQuestion(); // Start the quiz again
 }
+
+document.getElementById("startButton").addEventListener("click", function () {
+    const audio = document.getElementById("background-audio");
+    audio.play().catch((error) => console.error("Audio play error:", error));
+});
