@@ -44,6 +44,7 @@ button {
     padding: 10px 20px;
     background-color: gold;
     color: black;
+    font-size: xx-large;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -54,7 +55,7 @@ button {
 }
 
 button:hover {
-    background-color: crimson;
+    background-color: rgb(153, 3, 33);
     color: white;
     transform: scale(1.1);
 }
@@ -103,7 +104,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15x;
     
 }
 
