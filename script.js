@@ -1,12 +1,27 @@
 // Quiz questions and answers
 const quiz = [
     {
-        question: "Who is the original creator of the Mortal Kombat tournament?",
+        question: "Who is the original creator of the MK tournament?",
         choices: ["Raiden", "Shao Kahn", "Shang Tsung", "The Elder Gods"],
         correctAnswer: "The Elder Gods",
     },
     {
-        question: "Which Mortal Kombat character is known for the phrase 'Get over here!'?",
+        question: "What was the original release year of the first MK game?",
+        choices: ["1991", "1992", "1994", "1995"],
+        correctAnswer: "1992",
+    },
+    {
+        question: "Which MK character was the first female fighter?",
+        choices: ["Sonya Blade", "Kitana", "Sindel", "Jade"],
+        correctAnswer: "Sonya Blade",
+    },
+    {
+        question: "Who is the creator of the MK franchise?",
+        choices: ["Ed Boon", "John Tobias", "Tom and Jerry", "Hideo Kojima"],
+        correctAnswer: "Ed Boon",
+    },
+    {
+        question: "Which MK character is known for the phrase 'Get over here!'?",
         choices: ["Sub-Zero", "Johnny Cage", "Scorpion", "Liu Kang"],
         correctAnswer: "Scorpion",
     },
@@ -16,18 +31,38 @@ const quiz = [
         correctAnswer: "Outworld",
     },
     {
+        question: "Which character is the mother of Cassie Cage?",
+        choices: ["Sonya Blade", "Jade", "Kitana", "Sindel"],
+        correctAnswer: "Sonya Blade",
+    },
+    {
+        question: "What Mortal Kombat character was originally designed to be a secret character in the first game?",
+        choices: ["Scorpion", "Reptile", "Shang Tsung", "Raiden"],
+        correctAnswer: "Reptile",
+    },
+    {
+        question: "What is the name of Raiden’s signature electric attack?",
+        choices: ["Thunderstrike", "Electric Fly", "Lightning Bolt", "Storm Call"],
+        correctAnswer: "Lightning Bolt",
+    },
+    {
+        question: "Who is the leader of the Shokan race?",
+        choices: ["Goro", "Kintaro", "Shang Tsung", "Shao Kahn"],
+        correctAnswer: "Goro",
+    },
+    {
         question: "Which character uses ice-based attacks?",
         choices: ["Raiden", "Sub-Zero", "Kano", "Noob Saibot"],
         correctAnswer: "Sub-Zero",
     },
     {
-        question: "What finishing move is Mortal Kombat famous for?",
-        choices: ["Fatality", "KO", "Soul Steal", "Ultimate Strike"],
+        question: "What finishing move is MK famous for?",
+        choices: ["Fatality", "KO", "Brufality", "Ultimate Strike"],
         correctAnswer: "Fatality",
     },
     {
         question: "Which character is a Hollywood movie star?",
-        choices: ["Johnny Cage", "Sonya Blade", "Kung Lao", "Reptile"],
+        choices: ["Johnny Cage", "Sonya Blade", "Ashrah", "Jade"],
         correctAnswer: "Johnny Cage",
     },
     {
@@ -39,6 +74,11 @@ const quiz = [
         question: "Who is the sworn enemy of Sub-Zero?",
         choices: ["Scorpion", "Raiden", "Quan Chi", "Baraka"],
         correctAnswer: "Scorpion",
+    },
+    {
+        question: "Which actor was the inspiration for Johnny Cage?",
+        choices: ["Arnold Schwarzenegger", "Jean-Claude Van Damme", "Chuck Norris", "Bruce Lee"],
+        correctAnswer: "Jean-Claude Van Damme",
     },
     {
         question: "Which character is an elder god of thunder?",
@@ -56,14 +96,24 @@ const quiz = [
         correctAnswer: "Kung Lao",
     },
     {
+        question: "Which character was a monk and a martial artist?",
+        choices: ["Johnny Cage", "Kung Lao", "Liu Kang", "Stryker"],
+        correctAnswer: "Liu Kang",
+    },
+    {
         question: "Which actress provided both the likeness and voice for Nitara?",
         choices: ["Demi Moore", "Jessica Chastain", "Angelina Jolie", "Megan Fox"],
         correctAnswer: "Megan Fox",
     },
     {
-        question: "Which actor was the inspiration for Johnny Cage?",
-        choices: ["Arnold Schwarzenegger", "Jean-Claude Van Damme", "Chuck Norris", "Bruce Lee"],
-        correctAnswer: "Jean-Claude Van Damme",
+        question: "What is the name of the character who can shapeshift into other fighters?",
+        choices: ["Kano", "Reptile", "Shang Tsung", "Quan Chi"],
+        correctAnswer: "Shang Tsung",
+    },
+    {
+        question: "Who is the ruler of the Netherrealm?",
+        choices: ["Raiden", "Shao Kahn", "Quan Chi", "Shinnok"],
+        correctAnswer: "Shinnok",
     },
 ];
 
