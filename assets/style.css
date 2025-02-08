@@ -158,14 +158,69 @@ h3 {
     transform: translateY(-4px);
 }
 
-/* Ensuring buttons fit on smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
+    .container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 70%;
+        max-width: 260px;
+        margin-bottom: 15px;
+    }
+
     .quiz-container {
-        padding: 10px;  /* Less padding for small screens */
+        padding: 15px;
+        max-width: 95%;
+        box-shadow: 0px 0px 12px 4px #f2a900;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choices-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
     }
 
     button {
-        padding: 8px 15px; /* Smaller buttons for mobile screens */
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 14px;
+        width: 100%;
+        border-radius: 10px;
     }
+
+    #nextButton, #skipButton {
+        flex: 1;
+    }
+
+    h1, h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    #result {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: gold;
+    }
+    
 }
